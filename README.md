@@ -11,8 +11,23 @@ Nexus Analytics provides real-time tracking of cryptocurrency assets, user manag
 The easiest way to run the entire application is to use the provided startup script (on Windows).
 
 ### Prerequisites
-- **Python 3.10+** (for the backend)
-- **Node.js 18+** (for the frontend)
+- **Python 3.10+** (for local development)
+- **Node.js 18+** (for local development)
+- **Docker & Docker Compose** (for containerized deployment)
+
+## 🐳 Docker Deployment (Recommended)
+
+The entire system can be easily deployed using Docker. This ensures environment consistency across different systems.
+
+### Running with Docker Compose
+1. Ensure Docker is running on your machine.
+2. Run the following command in the root directory:
+   ```bash
+   docker-compose up --build
+   ```
+3. Access the services at:
+   - **Frontend UI**: `http://localhost:3000`
+   - **Backend API**: `http://localhost:8000/docs`
 
 ### Running the Application
 Simply double-click `start_app.bat` in the root directory. This will:
