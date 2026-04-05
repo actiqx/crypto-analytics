@@ -82,7 +82,7 @@ export function MainChart({ assetId }: { assetId: string }) {
                     boxShadow: 'var(--shadow)'
                   }}
                   itemStyle={{ color: 'hsl(var(--foreground))' }}
-                  formatter={(val: number) => [`$${val.toFixed(2)}`, 'Price']}
+                  formatter={(val: any) => [`$${parseFloat(val).toFixed(2)}`, 'Price']}
                 />
                 <Area 
                   type="monotone" 
