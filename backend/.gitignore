@@ -1,0 +1,26 @@
+# Environment Secrets
+.env
+.env.*
+
+# Python runtime
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env/
+
+# Database files
+*.db
+*.sqlite3
+
+# Logs
+backend.log
+*.log
+
+# Deployment
+.vscode/
+.idea/
+.serverless/
+.pytest_cache/
